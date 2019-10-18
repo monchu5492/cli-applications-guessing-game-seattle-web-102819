@@ -1,12 +1,12 @@
 require 'pry'
 
 def gen_rand_num
-  random_number = rand(1..6)
+  random_number = rand(6) + 1
   return random_number
 end
   
 def prompt 
-  puts "the universe asks for a number between 1 and 10"
+  puts "the universe asks for a number between 1 and 6"
 end
   
 def input
