@@ -1,3 +1,5 @@
+require 'pry'
+
 def gen_rand_num
   random_number = rand(1..6)
   return random_number
@@ -16,6 +18,7 @@ def run_guessing_game
  rand_num = gen_rand_num
  prompt
  user_input = input
+ binding.pry
  if user_input == rand_num
    return "You guessed the correct number!"
    elsif user_input != rand_num
