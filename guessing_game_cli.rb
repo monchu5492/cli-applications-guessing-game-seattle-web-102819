@@ -15,10 +15,10 @@ end
     
 
 def run_guessing_game
+  binding.pry
  rand_num = gen_rand_num
  prompt
  user_input = input
- binding.pry
  if user_input == rand_num
    return "You guessed the correct number!"
    elsif user_input != rand_num
