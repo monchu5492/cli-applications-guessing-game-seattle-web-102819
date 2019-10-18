@@ -19,11 +19,11 @@ def run_guessing_game
  prompt
  user_input = input
  if user_input == rand_num.to_s
-   return "You guessed the correct number!"
+   puts "You guessed the correct number!"
    elsif user_input.downcase == "exit"
-   return "Goodbye!"
+   puts "Goodbye!"
  else
-   return "Sorry! The computer guessed #{rand_num}."
+   puts "Sorry! The computer guessed #{rand_num}."
   end
 end
  
