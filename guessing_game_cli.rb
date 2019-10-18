@@ -22,7 +22,7 @@ def run_guessing_game
    return "You guessed the correct number!"
    elsif user_input != rand_num
    return "Sorry! The computer guessed #{rand_num}."
-   else user_input == "exit"
+   else user_input != "exit"
    return "Goodbye!"
   end
 end
