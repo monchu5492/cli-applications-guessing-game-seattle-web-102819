@@ -15,15 +15,14 @@ end
     
 
 def run_guessing_game
-  binding.pry
  rand_num = gen_rand_num
  prompt
  user_input = input
- if user_input == rand_num
+ if user_input == rand_num.to_s
    return "You guessed the correct number!"
    elsif user_input != rand_num
    return "Sorry! The computer guessed #{rand_num}."
-   elsif user_input == "exit"
+   else user_input == "exit"
    return "Goodbye!"
   end
 end
