@@ -18,7 +18,7 @@ def run_guessing_game
  user_input = input
  if user_input == rand_num
    return "You guessed the correct number!"
-   elsif user_input === rand_num
+   elsif user_input != rand_num
    return "Sorry! The computer guessed #{rand_num}."
    elsif user_input == "exit"
    return "Goodbye!"
